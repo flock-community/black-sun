@@ -12,7 +12,8 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint --ignore-path .gitignore .",
     "lint:prettier": "prettier --ignore-unknown --ignore-path .gitignore --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node ./src/index.js --debug"
   },
   "lint-staged": {
     "*": "prettier --write --ignore-unknown",
