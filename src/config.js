@@ -1,9 +1,20 @@
-import { TOKENS_FILE_PATH } from "../config.js";
+import { BUILD_PATH_INFIMA, TOKENS_FILE_PATH } from "../config.js";
 import { fileHeader } from "./formats/file-headers/register.js";
 
 export default {
 	source: [TOKENS_FILE_PATH],
 	platforms: {
+		infima: {
+			prefix: "ifm",
+			transformGroup: "infima",
+			buildPath: BUILD_PATH_INFIMA,
+			files: [
+				{
+					format: "css/variables",
+					destination: "custom.css",
+				},
+			],
+		},
 		js: {
 			transformGroup: "custom/js",
 			buildPath: "build/js/",
