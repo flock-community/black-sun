@@ -1,4 +1,8 @@
-import { BUILD_PATH_INFIMA, TOKENS_FILE_PATH } from "../config.js";
+import {
+	BUILD_PATH_INFIMA,
+	BUILD_PATH_JS,
+	TOKENS_FILE_PATH,
+} from "../config.js";
 import { fileHeader } from "./formats/file-headers/register.js";
 
 export default {
@@ -17,7 +21,7 @@ export default {
 		},
 		js: {
 			transformGroup: "custom/js",
-			buildPath: "build/js/",
+			buildPath: BUILD_PATH_JS,
 			options: { fileHeader },
 			files: [
 				{
