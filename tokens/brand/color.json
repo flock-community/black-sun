@@ -1,10 +1,18 @@
 {
   "color": {
+    "black": {
+      "type": "color",
+      "value": "{color.gray.1000}"
+    },
     "blue": {
       "type": "color",
       "value": "#23E5BD"
     },
     "gray": {
+      "0": {
+        "type": "color",
+        "value": "{color.white}"
+      },
       "100": {
         "type": "color",
         "value": "rgba({color.gray.500}, {opacity.20})"
