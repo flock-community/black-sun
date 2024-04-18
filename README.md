@@ -4,6 +4,37 @@ Black sun is the Design System of Flock. It's name has been derived from the flo
 
 It exposes the color set defined in the Flock style guide.
 
+## Install
+
+```sh
+npm i --save @flock/black-sun
+```
+
+## Usage
+
+### Infima
+
+[Infima](https://infima.dev/) is a modern styling framework used with [Docusaurus](https://docusaurus.io/).
+
+This package exports a custom theme, which overrides the Infima CSS custom properties.
+
+To make use of the custom theme, create a theme in the presets of the docusaurus configuration file `docusaurus.config.ts` and add the path to the `custom.css` file.
+
+```js
+presets: [
+    [
+      "classic",
+      {
+        theme: {
+          customCss: './node_modules/@flock/black-sun/build/infima/custom.css',
+        },
+      } satisfies Preset.Options,
+    ],
+  ],
+```
+
+Your ready to use the Flock. theme.
+
 ## Changelog
 
 The changelog can be found on the [Releases page](https://github.com/flock-community/@flock/black-sun/releases).
