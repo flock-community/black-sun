@@ -6,6 +6,7 @@
   "main": "./build/js/colors.js",
   "module": "./build/js/colors.js",
   "scripts": {
+    "clean:build": "rimraf build",
     "format": "run-p format:*",
     "format:eslint": "eslint --ignore-path .gitignore --fix .",
     "format:prettier": "prettier --ignore-unknown --ignore-path .gitignore --write .",
@@ -13,6 +14,7 @@
     "lint:eslint": "eslint --ignore-path .gitignore .",
     "lint:prettier": "prettier --ignore-unknown --ignore-path .gitignore --check .",
     "prepare": "husky install",
+    "prepublishOnly": "npm run clean:build && npm start",
     "start": "node ./src/index.js --debug"
   },
   "lint-staged": {
