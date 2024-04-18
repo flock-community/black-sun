@@ -5,6 +5,9 @@
   "type": "module",
   "main": "./build/js/colors.js",
   "module": "./build/js/colors.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "clean:build": "rimraf build",
     "format": "run-p format:*",
