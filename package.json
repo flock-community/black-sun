@@ -1,6 +1,6 @@
 {
   "name": "@flock/black-sun",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "the design system of Flock.",
   "type": "module",
   "exports": {
