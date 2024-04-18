@@ -1,0 +1,36 @@
+{
+  "color": {
+    "black": {
+      "type": "color",
+      "value": "{color.gray.1000}"
+    },
+    "content": {
+      "default": {
+        "type": "color",
+        "value": "{color.gray.1000}"
+      },
+      "inverse": {
+        "type": "color",
+        "value": "{color.gray.600}"
+      }
+    },
+    "primary": {
+      "default": {
+        "type": "color",
+        "value": "{color.yellow}"
+      }
+    },
+    "secondary": {
+      "default": {
+        "type": "color",
+        "value": "{color.blue}"
+      }
+    }
+  },
+  "heading": {
+    "color": {
+      "type": "color",
+      "value": "{color.gray.1000}"
+    }
+  }
+}
