@@ -43,7 +43,7 @@
     "rimraf": "^5.0.5",
     "sort-json": "^2.0.1",
     "sort-package-json": "^2.10.0",
-    "style-dictionary": "^3.9.2"
+    "style-dictionary": "^4.3.0"
   },
   "engines": {
     "node": ">=20"
