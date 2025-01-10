@@ -4,3 +4,6 @@ node_modules/
 .vscode/
 *.log
 .eslintcache
+
+# build directory
+build
