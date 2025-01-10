@@ -34,6 +34,8 @@
     ]
   },
   "devDependencies": {
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.10.5",
     "eslint": "^9.0.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
@@ -43,7 +45,8 @@
     "rimraf": "^5.0.5",
     "sort-json": "^2.0.1",
     "sort-package-json": "^2.10.0",
-    "style-dictionary": "^4.3.0"
+    "style-dictionary": "^4.3.0",
+    "typescript": "^5.5.4"
   },
   "engines": {
     "node": ">=20"
