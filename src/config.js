@@ -3,7 +3,7 @@ import {
 	BUILD_PATH_JS,
 	TOKENS_FILE_PATH,
 } from "../config.js";
-import { fileHeader } from "./formats/file-headers/register.js";
+import { fileHeader } from "./formats/file-headers/customFileHeader.js";
 
 export default {
 	source: [TOKENS_FILE_PATH],
