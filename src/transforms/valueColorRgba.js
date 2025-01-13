@@ -1,13 +1,17 @@
-import StyleDictionary from "style-dictionary";
-
-const transformer = (token) => {
+/** @type {Transform['transform']} */
+const transform = (token) => {
 	if (!token.original.value?.includes("rgba(")) return token.value;
+
 	const tokenOriginalValueRegex =
 		/rgba\(\s*(?<color>\{*.*\})\s*,\s*(?<alpha>\{*.*\})\)/g;
 
 	const newOriginalValue = token.original.value.replace(
 		tokenOriginalValueRegex,
-		(match, color, alpha) => {
+		(
+			/** @type {string} */ _match,
+			/** @type {string} */ color,
+			/** @type {string} */ alpha,
+		) => {
 			return `color-mix(in srgb, ${color} ${alpha}, ${color} 0%)`;
 		},
 	);
@@ -16,11 +20,12 @@ const transformer = (token) => {
 	return newOriginalValue;
 };
 
-StyleDictionary.registerTransform({
+/** @type {Transform} */
+const valueColorRgbaTransformer = {
 	type: "value",
 	name: "ts/color/rgba",
 	transitive: true,
-	transformer,
-});
+	transform,
+};
 
-export { transformer as _transformer };
+export { transform as _transform, valueColorRgbaTransformer };
