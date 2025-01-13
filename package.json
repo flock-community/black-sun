@@ -12,6 +12,7 @@
     "build"
   ],
   "scripts": {
+    "build": "node ./scripts/buildTokens.js",
     "clean:build": "rimraf build",
     "format": "run-p format:*",
     "format:eslint": "eslint --ignore-path .gitignore --fix .",
