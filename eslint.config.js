@@ -1,3 +1,10 @@
+import globals from "globals";
 import js from "@eslint/js";
 
-export default [js.configs.recommended];
+/** @type {import('eslint').Linter.Config} */
+export default {
+	...js.configs.recommended,
+	languageOptions: {
+		globals: { ...globals.node },
+	},
+};
