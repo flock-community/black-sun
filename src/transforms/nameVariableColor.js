@@ -1,5 +1,5 @@
 /** @type {NameTransform['transform']} */
-const transform = (token) => token.name.replace("Color", "");
+const transform = (token, _config, _opts) => token.name.replace("Color", "");
 
 /** @type {Transform} */
 const nameVariableColorTransformer = {

@@ -1,5 +1,5 @@
 /** @type {NameTransform['transform']} */
-const transform = (token) => {
+const transform = (token, _config, _opts) => {
 	token.path.slice(0, -1);
 
 	return token.name.replace("-default", "");

@@ -1,5 +1,5 @@
 /** @type {Transform['transform']} */
-const transform = (token) => {
+const transform = (token, _config, _opts) => {
 	if (!token.original.value?.includes("rgba(")) return token.value;
 
 	const tokenOriginalValueRegex =
