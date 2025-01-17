@@ -5,6 +5,15 @@ import js from "@eslint/js";
 export default {
 	...js.configs.recommended,
 	languageOptions: {
-		globals: { ...globals.node },
+		globals: { ...globals.node, ...globals.mocha },
+	},
+	rules: {
+		"no-unused-vars": [
+			"error",
+			{
+				varsIgnorePattern: "^_",
+				argsIgnorePattern: "^_",
+			},
+		],
 	},
 };
