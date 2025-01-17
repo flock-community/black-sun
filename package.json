@@ -22,7 +22,7 @@
     "lint:prettier": "prettier --ignore-unknown --ignore-path .gitignore --check .",
     "prepare": "husky install",
     "prepublishOnly": "npm run clean:build && npm start",
-    "start": "node ./src/index.js --debug"
+    "start": "npm run build"
   },
   "lint-staged": {
     "*": "prettier --write --ignore-unknown",
