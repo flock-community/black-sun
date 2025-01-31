@@ -35,6 +35,14 @@ presets: [
 
 Your ready to use the Flock. theme.
 
+## Contributing
+
+Read the [CONTRIBUTING.md](./CONTRIBUTING.md) if you want to contribute to this project.
+
+## Maintainer
+
+If you are a package maintainer, read the [MAINTAINERS.md](./MAINTAINERS.md) for information about package maintenance.
+
 ## Changelog
 
 The changelog can be found on the [Releases page](https://github.com/flock-community/@flock/black-sun/releases).
